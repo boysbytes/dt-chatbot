@@ -1,7 +1,7 @@
 const GEMINI_API_KEY = process.env.REACT_APP_GEMINI_API_KEY;
 
 const callGeminiAPI = async (payload) => {
-  const response = await fetch(API_URL, {
+  const response = await fetch(GEMINI_API_KEY, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(payload)
